@@ -15,7 +15,7 @@ export default function Modal({navn, orgnr, form, adr1, adr2, adr3, net, show, o
       <div>Organisasjonsform: {form}</div>
       <div>Adresse:</div>
       <div>
-        <a target="_blank" href={googleAddress}>{adr1} {adr2}</a>
+        <a target="_blank" rel="noreferrer" href={googleAddress}>{adr1} {adr2}</a>
         <p>{adr3}</p>
       </div>
       <div>{net}</div>
