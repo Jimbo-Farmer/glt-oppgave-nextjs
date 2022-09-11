@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from "react";
 import Modal from "./Modal";
 
 export default function Dropdown({list}) {
@@ -11,7 +11,6 @@ export default function Dropdown({list}) {
   function openModal(e){
     setShowModal(true);
     let index = e.target.parentElement.dataset.index;
-    console.log(list[index]);
     setNavn(list[index].navn);
     setOrgnr(list[index].organisasjonsnummer);
     setForm(list[index].organisasjonsform.beskrivelse);

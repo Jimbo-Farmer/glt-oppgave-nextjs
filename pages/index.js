@@ -9,7 +9,6 @@ const url = 'https://data.brreg.no/enhetsregisteret/api/enheter?page=0&size=100'
 
 export default function Home(props) {
   const [results, setResults] = useState([]);
-  console.log(props.enheter);
   function handleEvent(e){
     setResults(searchEnheter(props.enheter, e.target.value.trim()));
   }
